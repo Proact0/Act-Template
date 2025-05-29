@@ -1,5 +1,5 @@
 """
-상태 모듈
+상태 모듈 (필수수)
 
 Langgraph State를 보관하는 모듈입니다.
 """
@@ -10,7 +10,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class State(TypedDict):
+class State:
     """
     에이전트 상태 클래스
 
