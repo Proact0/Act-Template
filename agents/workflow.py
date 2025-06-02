@@ -1,7 +1,7 @@
 from langgraph.graph.state import StateGraph
 
 from agents.base_workflow import BaseWorkflow
-from agents.main_state import MainState
+from agents.state import MainState
 
 
 class MainWorkflow(BaseWorkflow):
