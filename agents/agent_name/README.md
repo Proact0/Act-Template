@@ -1,8 +1,8 @@
-# Source Person Interview 모듈 (Source Person Interview Module)
+# Agent Name 모듈 (Agent Name Module)
 
 ## 개요
 
-이 모듈은 Pseudo Education Company의 Source Person Interview 진행 및 통찰 추출을 담당하는 LangGraph Workflow입니다. 교육 콘텐츠 제작을 위한 전문가 인터뷰 질문 준비, 응답 분석, 핵심 통찰 추출 기능을 제공합니다.
+이 모듈은 Company Name 의 Agent Name 진행 및 통찰 추출을 담당하는 LangGraph Workflow입니다. 교육 콘텐츠 제작을 위한 전문가 인터뷰 질문 준비, 응답 분석, 핵심 통찰 추출 기능을 제공합니다.
 
 ## 주요 노드
 
@@ -11,7 +11,7 @@
 ## 구조
 
 ```
-source_person_interview/
+agent_name/
 ├── modules/            # 모듈 구성 요소
 │   ├── chains.py      # LangChain 체인 정의
 │   ├── conditions.py  # 조건부 라우팅 함수
@@ -23,15 +23,15 @@ source_person_interview/
 │   └── utils.py       # 유틸리티 함수
 ├── pyproject.toml     # 프로젝트 관리자
 ├── README.md          # 이 문서
-└── workflow.py        # Source Person Interview Workflow 정의
+└── workflow.py        # Agent Name Workflow 정의
 ```
 
 ## 사용 방법
 
-Source Person Interview Workflow는 다음과 같이 사용할 수 있습니다:
+Agent Name Workflow는 다음과 같이 사용할 수 있습니다:
 
 ```python
-from agents.source_person_interview.workflow import source_person_interview_workflow
+from agents.agent_name.workflow import agent_name_workflow
 
 # 초기 상태 설정
 initial_state = {
@@ -44,7 +44,7 @@ initial_state = {
 }
 
 # Workflow 실행
-result = source_person_interview_workflow().invoke(initial_state)
+result = agent_name_workflow().invoke(initial_state)
 ```
 
 ## 확장 방법
