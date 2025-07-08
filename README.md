@@ -110,9 +110,7 @@ $ uvx --from "langgraph-cli[inmem]" --with-editable . langgraph dev
 
 프로젝트는 pre-commit을 사용하여 코드 스타일과 품질을 관리합니다. 다음 툴들이 자동으로 실행됩니다:
 
-- **flake8**: 코드 품질 검사
-- **black**: 코드 포맷팅
-- **isort**: import 문 정렬
+- **ruff**: 코드 품질 검사, 코드 포맷팅, import 문 정렬
 - **uv-lock**: 의존성 파일 동기화
 
 > 참고:
