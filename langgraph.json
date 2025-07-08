@@ -1,8 +1,8 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "main": "./agents/workflow.py:main_workflow",
-    "agent_name": "./agents/agent_name/workflow.py:agent_name_workflow"
+    "main": "./casts/workflow.py:main_workflow",
+    "cast_name": "./casts/cast_name/workflow.py:cast_name_workflow"
   },
   "env": ".env"
 }

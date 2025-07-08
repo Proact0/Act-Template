@@ -1,7 +1,7 @@
 from langgraph.graph.state import StateGraph
 
-from agents.base_workflow import BaseWorkflow
-from agents.state import MainState
+from casts.base_workflow import BaseWorkflow
+from casts.state import MainState
 
 
 class MainWorkflow(BaseWorkflow):
@@ -9,7 +9,7 @@ class MainWorkflow(BaseWorkflow):
     메인 Workflow 클래스
 
     Team Member는 해당 Workflow에서 따로 작업을 진행하지 않으셔도 됩니다.
-    이 클래스는 모든 Agentic Workflow를 바탕으로 주요 Workflow를 정의합니다.
+    이 클래스는 모든 castic Workflow를 바탕으로 주요 Workflow를 정의합니다.
     """
 
     def __init__(self, state):

@@ -7,11 +7,11 @@ BaseWorkflow를 상속받아 기본 구조를 구현하고, State를 사용하�
 
 from langgraph.graph import StateGraph
 
-from agents.agent_name.modules.state import State
-from agents.base_workflow import BaseWorkflow
+from casts.base_workflow import BaseWorkflow
+from casts.cast_name.modules.state import State
 
 
-class AgentNameWorkflow(BaseWorkflow):
+class CastNameWorkflow(BaseWorkflow):
     def __init__(self, state):
         super().__init__()
         self.state = state
@@ -57,4 +57,4 @@ class AgentNameWorkflow(BaseWorkflow):
 
 
 # 에이전트 워크플로우 인스턴스 생성
-agent_name_workflow = AgentNameWorkflow(State)
+cast_name_workflow = CastNameWorkflow(State)

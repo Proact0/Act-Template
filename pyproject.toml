@@ -1,5 +1,5 @@
 [project]
-name = "company-name"
+name = "act-name"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -16,8 +16,22 @@ dependencies = [
 dev = ["ipykernel>=6.29.5", "langgraph-cli[inmem]>=0.2.3", "pytest>=8.3.5"]
 
 [tool.pyright]
-include = ["agents", "tests"]
+include = ["casts", "tests"]
 exclude = ["**/__pycache__/*", "**/node_modules/*", ".venv", "**/.venv"]
 
 [tool.uv.workspace]
-members = ["agents/agent_name"]
+members = ["casts/cast_name"]
+
+[tool.ruff]
+exclude = [
+    "(^|/)(.venv|venv|node_modules|__pycache__|migrations|static|templates|.git|.github|.langgraph_api|media)(/|$)",
+    "^tests(/|$)",
+    "^unit_tests(/|$)",
+    ".env",
+    ".env.example",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "langgraph.json",
+    "uv.lock"
+]

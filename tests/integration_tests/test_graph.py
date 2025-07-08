@@ -13,12 +13,12 @@
 import pytest
 from langsmith import unit
 
-from agents import main_workflow
+from casts import main_workflow
 
 
 @pytest.mark.asyncio
 @unit
-async def test_agent_simple_passthrough() -> None:
+async def test_cast_simple_passthrough() -> None:
     """
     에이전트 그래프의 기본 패스스루 기능을 테스트합니다.
 

@@ -1,11 +1,12 @@
 ---
 name: Backlog
 about: 백로그 산정/추가 시 사용
-title: "[#Team Name] Feature Name"
+title: "[#Crew Name] Feature Name"
 labels: enhancement
 assignees: ''
 
 ---
+
 <!--
 해당 백로그에 대한 브랜치를 만들어주세요.
 백로그 이름은 "feat/[해당 기능에 대한 이름]"으로 만들어주세요.

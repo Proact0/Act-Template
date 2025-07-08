@@ -8,8 +8,8 @@
 단위 테스트는 외부 의존성을 최소화하고 테스트 실행 속도를 최대화하도록 설계됩니다.
 """
 
-# from agents.agent_name.modules.nodes import Node
-# from agents.agent_name.modules.state import State
+# from casts.cast_name.modules.nodes import Node
+# from casts.cast_name.modules.state import State
 
 
 def test_node_empty() -> None:

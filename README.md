@@ -1,4 +1,4 @@
-# Company Name
+# Act Name
 
 LangGraph와 LangChain을 활용한 AI 기반 프로젝트 템플릿
 
@@ -18,17 +18,17 @@ LangGraph와 LangChain을 활용한 AI 기반 프로젝트 템플릿
 
 ### 시스템 요구사항
 
-- Python 3.11 이상
+- Python 3.13 이상
 - uv (의존성 관리)
-- Flake8, Black, Isort (PEP8 스타일 포맷팅)
+- Ruff
 
 ### 설치 절차
 
 #### 1. 저장소 클론
 
 ```bash
-$ git clone https://github.com/Pseudo-Group/Company-Name.git
-$ cd Company-Name
+$ git clone https://github.com/Proact0/Act-Name.git
+$ cd Act-Name
 ```
 
 #### 2. uv 설치 (아직 설치되지 않은 경우)
@@ -57,20 +57,20 @@ $ uv sync --all-packages
 $ uv sync --package <PACKAGE NAME>
 ```
 
-> ex) agent_name의 경우
+> ex) cast_name의 경우
 >
 > ```bash
-> $ uv sync --package agent_name
+> $ uv sync --package cast_name
 > ```
 
-- langgraph.json에 노드 수정 (예: agent_name만 설치할 경우)
+- langgraph.json에 노드 수정 (예: cast_name만 설치할 경우)
 
 ```json
 {
   "dependencies": ["."],
   "graphs": {
-    "main": "./agents/workflow.py:main_workflow",
-    "agent_name": "./agents/agent_name/workflow.py:agent_name_workflow"
+    "main": "./casts/workflow.py:main_workflow",
+    "cast_name": "./casts/cast_name/workflow.py:cast_name_workflow"
   },
   "env": ".env"
 }
@@ -79,7 +79,7 @@ $ uv sync --package <PACKAGE NAME>
 #### 5. LangGraph 서버 실행
 
 ```bash
-$ uv run langgraph dev
+$ uvx --from "langgraph-cli[inmem]" --with-editable . langgraph dev
 ```
 
 ### 서버가 실행되면 다음 URL에서 접근할 수 있습니다:
@@ -96,8 +96,8 @@ $ uv run langgraph dev
 
 ### 변수에 따른 값 입력 후 실행
 
-- 각 Agent 별 `State`에 정의된 Attribute에 따라 변수를 입력합니다.
-- `GraphState`는 `agents/{agent_type}/modules/state.py:{state_name}`에서 개별 관리됩니다.
+- 각 cast 별 `State`에 정의된 Attribute에 따라 변수를 입력합니다.
+- `GraphState`는 `casts/{cast_type}/modules/state.py:{state_name}`에서 개별 관리됩니다.
 
 **실행 화면**
 ![](media/LangGraph_Studio_after_invoke.png)
