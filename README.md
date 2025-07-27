@@ -1,6 +1,6 @@
 # Act Name
 
-LangGraph와 LangChain을 활용한 AI 기반 프로젝트 템플릿
+LangGraph와 LangChain을 활용한 AX, Agentic AI System 프로젝트/프로덕트 템플릿
 
 ## 프로젝트 소개
 
