@@ -121,5 +121,4 @@ $ uvx --from "langgraph-cli[inmem]" --with-editable . langgraph dev
 
 ### 💡 **NOTE**:
 
-- 형식 및 가이드에 맞춰서 Commit Message, Issue, Pull Request를 작성해주세요. 상세 설명은 [여기(내부 링크)](https://www.notion.so/hon2ycomb/Git-Commit-Message-Convention-1b000c82b1388185aa3cf88a7e57f24c?pvs=4)를 참조하세요 :)
-- 본 프로젝트에서 PR 후 merge하는 경우, github action으로 포맷팅 검사를 진행합니다. vscode 및 cursor에서 포맷팅 세팅은 [여기](https://gamchan.notion.site/vscode-9b61026771cb4121bbb80d4d4f289bc2)를 참조하세요 :)
+- 템플릿 사용법, 설계 방법, 기여 방법 등 모든 내용은 다음 링크에서 확인이 가능합니다: https://www.hon2yt2ch.life/proact0/guide
