@@ -12,9 +12,9 @@ from casts.cast_name.modules.state import State
 
 
 class CastNameWorkflow(BaseWorkflow):
-    def __init__(self, state):
+    def __init__(self):
         super().__init__()
-        self.state = state
+        self.state = State
 
     def build(self):
         """
@@ -57,4 +57,4 @@ class CastNameWorkflow(BaseWorkflow):
 
 
 # 에이전트 워크플로우 인스턴스 생성
-cast_name_workflow = CastNameWorkflow(State)
+cast_name_workflow = CastNameWorkflow()
