@@ -13,7 +13,12 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["ipykernel>=6.29.5", "langgraph-cli[inmem]>=0.2.3", "pytest>=8.3.5"]
+dev = [
+    "ipykernel>=6.29.5",
+    "langgraph-api>=0.3.0",
+    "langgraph-cli[inmem]>=0.2.3",
+    "pytest>=8.3.5",
+]
 
 [tool.pyright]
 include = ["casts", "tests"]
